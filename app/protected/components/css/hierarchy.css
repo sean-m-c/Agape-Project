@@ -1,0 +1,26 @@
+#ajaxBreadcrumbs {
+    color:#999;
+    font-weight:normal;
+}
+#ajaxBreadcrumbs span.currentCrumb {
+    color:#666;
+}
+div#parentList {
+    margin-bottom:2em;
+}
+div#parentList ul {
+    list-style-image: url(../../images/i_login.png);
+    list-style-position:inside;
+}
+div#parentList > ul {
+    margin:0;
+    padding:0;
+}
+div#parentList ul li a {
+    font-size:1em;
+    color:#666;
+    padding-bottom:7px;
+}
+div#parentList ul li a:hover, div#parentList ul li a:active {
+    color:#333;
+}

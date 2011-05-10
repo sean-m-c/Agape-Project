@@ -1,0 +1,11 @@
+Find Projects
+
+Status, obviously
+
+1) Associated with person and/or partner
+2) Search by zip code 
+3) Search by state and/or country
+4) Issue area
+5) Range of volunteers
+6) One time or ongoing
+7) Costs per person

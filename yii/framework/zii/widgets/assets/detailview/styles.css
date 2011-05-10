@@ -1,0 +1,35 @@
+table.detail-view .null
+{
+	color: #E5C793;
+}
+
+table.detail-view {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 0;
+	}
+
+table.detail-view th,
+table.detail-view td {
+	font-size: 0.9em;
+	border: none;
+	padding: 0.25em 0.6em 1em 0.25em;
+	vertical-align: top;
+	}
+
+table.detail-view th {
+	width: 160px;
+	font-family: Cambria, Georgia, serif;
+	color: #666;
+	border-right: 1px solid #666;
+	}
+
+table.detail-view td {
+	color: #232323;
+	padding-left: 0.5em;
+	}
+	
+table.detail-view tr {
+	border-top: 1px solid #DDD;	
+	}
+

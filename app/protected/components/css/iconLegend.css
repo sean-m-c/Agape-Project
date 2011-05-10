@@ -1,0 +1,41 @@
+/* Legend for tab icons */
+div.iconLegend {
+    float:right;
+    text-align:right;
+    background:url('../../images/divider.gif') bottom left no-repeat;
+    height:30px;
+}
+
+div.iconLegend h3 a {
+    color:#666;
+    padding:10px 10px 10px 30px;
+    background:url('../../images/i_question.png') 0 5px no-repeat;
+}
+div.iconLegend h3 a:hover {
+    color:#000;
+}
+div.iconLegend ul.iconLegendList {
+    text-shadow: 0px -1px 2px #fff;
+    background:#f2f2f2 url('../images/alert-overlay.png') 0 0 repeat-x;
+    border:1px solid #ccc;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    list-style-type:none;
+    position:absolute;
+    right:120px;
+    z-index:999;
+    padding:10px;
+    margin:0;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+}
+div.iconLegend ul.iconLegendList li {
+    margin:0;
+    padding:0;
+    color:#333;
+    font-weight:bold;
+}
+div.iconLegend ul.iconLegendList li a {
+    padding:0 5px;
+}

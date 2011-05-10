@@ -1,0 +1,810 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url('../images/bodyBg.gif') repeat-x #f5f5f5;
+}
+
+#page
+{
+    background: #fff;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+#header
+{
+    padding: .75em 0;
+    margin:0;
+}
+
+#header > #name {
+    color:#666;
+    text-shadow: 0px 3px 3px #e1e1e1;
+}
+#header img
+{
+    margin: .75em 1em 0 0;
+    padding:0;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+#content, #contentWrapper
+{
+    padding: 1.5em;
+}
+
+#sidebar
+{
+    padding: 20px 20px 20px 0;
+}
+
+#footer
+{
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 1px solid #C9E0ED;
+}
+
+#name
+{
+    margin:.75em 0;
+    float:right;
+    color:#333;
+    font-size: 250%;
+    vertical-align: bottom;
+}
+
+#mainmenu
+{
+    background:#6f8195 url('../images/alert-overlay.png') 0 0 repeat-x;
+    border-bottom:1px solid #5d6e82;
+}
+#mainmenu ul
+{
+    background:transparent;
+    margin-left:1.5em;
+}
+#mainmenu ul#nav li {
+    margin:0 .25em;
+}
+#mainmenu ul a
+{
+    color:#fff;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+    padding:.75em 1em .75em 2em;
+}
+#mainmenu ul#nav > li > a {
+    text-shadow: 0 -1px 1px #666;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul#nav > li.active > a
+{
+    border-top:1px solid #7e7c7c;
+    border-bottom:1px solid #fff;
+    border-right:1px solid #5d6e82;
+    border-left:1px solid #5d6e82;
+    color: #333;
+    background-color:#fff;
+    text-decoration:none;
+    margin:0 -1px -2px -1px;
+}
+
+#mainmenu ul#nav > li > a:hover, #mainmenu ul#nav > li.active > a
+{
+    -moz-border-radius:8px 8px 0 0;
+    -webkit-border-radius:8px 8px 0 0;
+    border-radius:8px 8px 0 0;
+    text-shadow:none;
+}
+
+#mainmenu ul#nav > li.parent > a:hover {
+    color:#333;
+    margin-bottom:-2px;
+}
+/* Second level */
+#mainmenu ul#nav > li > ul
+{
+    border:1px solid #999;
+    background-color:#F2F2F2;
+    margin-top:1.6em;
+    margin-left:0;
+    padding:0;
+}
+
+#mainmenu ul#nav > li > ul > li
+{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    background:transparent url('../images/alert-overlay.png') 0 0 repeat-x;
+
+}
+#mainmenu ul#nav > li > ul > li > a
+{
+    border:none;
+    background:transparent;
+    font-size:1em;
+    font-weight:bold;
+    text-decoration:none;
+    padding:.75em 1em;
+    margin:0;
+    width:160px;
+}
+#mainmenu ul#nav > li > ul > li > a:hover
+{
+    background-color:#fff;
+    border-bottom:1px solid #e1e1e1;
+    border-top:1px solid #e1e1e1;
+    margin:-1px 0;
+}
+div.flash
+{
+    padding:.8em 3.5em;
+    margin-bottom:1em;
+    border:2px solid #ddd;
+}
+div.flash a.closeFlash {
+    cursor:pointer;
+    margin-left:2em;
+}
+
+div.flash-error
+{
+    background:#FBE3E4 url('../images/i_logout.png') .8em center no-repeat;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+    background:#FFF6BF url('../images/i_notifications.png') .8em center no-repeat;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success
+{
+    background:#E6EFC2 url('../images/i_checkmark.png') .8em center no-repeat;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a
+{
+    color:#8a1f11;
+}
+
+div.flash-notice a
+{
+    color:#514721;
+}
+
+div.flash-success a
+{
+    color:#264409;
+}
+
+div.form .rememberMe label
+{
+    display: inline;
+}
+
+div.view
+{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f2f2f2;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+div.breadcrumbs
+{
+    padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+    font-weight: bold;
+}
+
+div.search-form
+{
+    padding: 10px;
+    margin: 10px 0;
+    background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+    padding: 3px 8px;
+    background: #B7D6E7;
+    border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #298dcd;
+}
+
+.portlet-content
+{
+    font-size:0.9em;
+    margin: 0 0 15px 0;
+    padding: 5px 8px;
+    background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet-content li
+{
+    padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.operations li
+{
+    padding-bottom: 2px;
+}
+
+.operations li a
+{
+    font: bold 12px Arial;
+    color: #0066A4;
+    display: block;
+    padding: 2px 0 2px 8px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.operations li a:visited
+{
+    color: #0066A4;
+}
+
+.operations li a:hover
+{
+    background: #80CFFF;
+}
+
+/* Icons */
+.i_login {
+    background:url(../images/i_login.png) 0 9px no-repeat;
+}
+.i_home {
+    background:url(../images/i_home.png) 0 9px no-repeat;
+}
+.i_logout {
+    background:url(../images/i_logout.png) 0 9px no-repeat;
+}
+.i_search, .i_view {
+    background:url(../images/i_glass.png) 0 9px no-repeat;
+}
+.i_profile {
+    background:url(../images/i_profile.png) 0 9px no-repeat;
+}
+.i_notifications {
+    background:url(../images/i_notifications.png) 0 9px no-repeat;
+}
+.i_arrow_right {
+    background:url(../images/i_arrow_right.png) 0 0 no-repeat;
+}
+.i_arrow_down {
+    background:url(../images/i_arrow_down.png) 0 9px no-repeat;
+}
+.i_arrow_list_right {
+    background:url(../images/i_login.png) 0 0 no-repeat;
+}
+.i_checkmark {
+    background:url(../images/i_checkmark.png) 0 0 no-repeat;
+}
+.i_mailAdd {
+    background:url(../images/i_mailAdd.png) 0 0 no-repeat;
+}
+.i_accept {
+    background:url(../images/i_accept.png) 0 0 no-repeat;
+}
+.i_edit {
+    background:url(../images/i_edit.png) 0 0 no-repeat;
+}
+.i_decline {
+    background:url(../images/i_decline.png) 0 0 no-repeat;
+}
+.i_add {
+    background:url(../images/i_add.png) 0 0 no-repeat;
+}
+.i_question {
+    background:url(../images/i_question.png) 0 0 no-repeat;
+}
+.i_refresh {
+    background:url(../images/i_refresh.png) 0 0 no-repeat;
+}
+.i_commentOpen {
+    background:url(../images/i_commentOpen.png) 0 0 no-repeat;
+}
+.i_commentClose {
+    background:url(../images/i_commentClose.png) 0 0 no-repeat;
+}
+.i_back {
+    background:url(../images/i_back.png) 0 0 no-repeat;
+}
+.i_forward {
+    background:url(../images/i_forward.png) 0 0 no-repeat;
+}
+.i_close {
+    background:url(../images/i_logout.png) 0 9px no-repeat;
+}
+.i_delete {
+    background:url(../images/i_logout.png) 0 9px no-repeat;
+}
+.icon_pad {
+    padding:5px 0 6px 30px;
+    border:0;
+}
+.noBGPad {
+    background-position:0 0;
+}
+
+/* Custom - move this somewhere else */
+.cssGridButton {
+    background: #FF8638 url(../images/alert-overlay.png) repeat-x;
+    color: #fff;
+    display: inline-block;
+    text-align:center;
+    padding:1px 10px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    /* For IE */
+    * background-color:#e7731d;
+    * top:10px;
+}
+.cssGridButton:hover {
+    background-color: #fe6d03;
+}
+.cssGridButton:active { top: 1px; }
+.cssGridButton:focus {
+    outline:2px solid rgba(0,100,200,0.5);
+    -moz-outline-radius:3px;
+}
+
+/* Dressed up buttons */
+.diffbutton, .diffbutton:visited {
+    background: #FF8638 url(../images/alert-overlay.png) repeat-x;
+    color: #fff;
+    display: inline-block;
+    text-align:center;
+    font:25px/60px Verdana,sans-serif,Helvetica,Arial;
+    padding:8px 14px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    width:180px;
+    height:60px;
+    /* For IE */
+    * background-color:#e7731d;
+    * top:10px;
+}
+.diffbutton:hover {
+    background-color: #fe6d03;
+}
+.diffbutton:active { top: 1px; }
+.diffbutton:focus {
+    outline:2px solid rgba(0,100,200,0.5);
+    -moz-outline-radius:3px;
+}
+.diffbutton.small {
+    float:right;
+    width:140px;
+    height:15px;
+    font-size:15px;
+    line-height:15px;
+    font-weight:bold;
+    margin:0;
+    padding:10px 5px;
+    color:#fff;
+}
+
+/* PRoject */
+#ajaxPanel {
+    width:100%;
+    margin-left:105%;
+}
+
+#project-form {
+    overflow:hidden;
+}
+
+.loading {
+
+    margin:0 auto;
+    background-image: url('../images/ajax-loader.gif');
+    background-position:  center center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index:1010;
+    width:100%;
+    height:100px;
+}
+
+
+/* Not sure what to do with these yet; need them for admin
+workflow pane, but it should be reading from assets - decide later */
+.grid-view-loading
+{
+    background:url(loading.gif) no-repeat;
+}
+
+.grid-view table.items
+{
+    background: white;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px #D0E3EF solid;
+}
+
+.grid-view table.items th, .grid-view table.items td
+{
+    font-size: 0.9em;
+    border: 1px white solid;
+    padding: 0.3em;
+}
+
+.grid-view table.items th
+{
+    color: white;
+    background: url("bg.gif") repeat-x scroll left top white;
+    text-align: center;
+}
+
+.grid-view table.items th a
+{
+    color: #EEE;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.grid-view table.items th a:hover
+{
+    color: #FFF;
+}
+
+.grid-view table.items th a.asc
+{
+    background:url(up.gif) right center no-repeat;
+    padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+    background:url(down.gif) right center no-repeat;
+    padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+    background: #F8F8F8;
+}
+
+.grid-view table.items tr.odd
+{
+    background: #E5F1F4;
+}
+
+.grid-view table.items tr.selected
+{
+    background: #BCE774;
+}
+
+.grid-view table.items tr:hover
+{
+    background: #ECFBD4;
+}
+
+.grid-view .link-column img
+{
+    border: 0;
+}
+
+.grid-view .button-column
+{
+    text-align: center;
+    width: 200px;
+}
+
+.grid-view .button-column img
+{
+    border: 0;
+}
+
+.grid-view .checkbox-column
+{
+    width: 15px;
+}
+
+.grid-view .summary
+{
+    margin: 0 0 5px 0;
+    text-align: right;
+}
+
+.grid-view .pager
+{
+    margin: 5px 0 0 0;
+    text-align: right;
+}
+
+.grid-view .empty
+{
+    font-style: italic;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* For AJAX loader box, to remove the 'X' in top right corner */
+.ajax-loader .ui-dialog-titlebar-close, .ajax-loader .ui-dialog-titlebar, .ajax-loader .ui-widget-header {
+    display: none;
+}
+
+.ui-dialog.ajax-loader .ui-widget-content {
+    padding:30px 20px;
+    overflow:visible;
+    position:relative;
+    top:-17px;
+    left:-7px;
+}
+
+/* For link to open review dialog box */
+.reviewButtons {
+    display:block;
+    margin-bottom:1em;
+}
+a.review {
+    text-decoration:none;
+    border:1px solid #ccc;
+    padding:5px 10px 5px 30px;
+    color:#333;
+    display:inline;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+a.review.comment {
+    background:#f2f2f2 url('../images/i_comment.png') 0 0px no-repeat;
+}
+a.review.decision {
+    background:#f2f2f2 url('../images/i_decision.png') 0 0px no-repeat;
+    margin-right:1em;
+}
+a.review:hover {
+    border:1px solid #999;
+    background-color:#ccc;
+    cursor:pointer;
+}
+#reviewDecision {
+    background:#fff;
+    border:1px solid #e1e1e1;
+    display:none;
+    position:absolute;
+    z-index:1010;
+    padding:20px;
+    width:300px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+#reviewDecision .row {
+
+}
+#reviewDecision label {
+    float:left;
+    width:200px;
+}
+
+.hide {
+    display:none;
+}
+a {
+    outline:none;
+}
+.tooltip {
+    display:none;
+    border:3px solid #000;
+    padding:10px;
+    min-width:150px;
+    max-width:300px;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background: #333;
+    -moz-box-shadow: 1px 1px 10px #333;
+    -webkit-box-shadow: 1px 1px 10px #333;
+}
+
+/* JTools tabs */
+/* root element for accordion. decorated with rounded borders and gradient background image */
+.accordion {
+    background:#fff url(/img/global/gradient/h300.png) 0 0;
+    border:1px solid #ccc;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+/* accordion header */
+.accordion h2 {
+    background:#fff url(/img/global/gradient/h30.png);
+    margin:0;
+    padding:5px 15px;
+    border-bottom:1px solid #999;
+    cursor:pointer;
+}
+
+/* currently active header */
+.accordion h2.current {
+    cursor:default;
+}
+
+/* accordion pane */
+.accordion .pane {
+    border-width:0 2px;
+    display:none;
+    height:180px;
+    padding:15px;
+}
+
+/* a title inside pane */
+.accordion .pane h3 {
+    font-weight:normal;
+    margin:0 0 -5px 0;
+    font-size:16px;
+}
+.ajaxLoaderSmall {
+    background:url('../images/ajax-loader-small.gif') 0 0 no-repeat;
+    padding-left:30px;
+}
+#ajaxResponse {
+    border-top:2px solid #f2f2f2;
+    margin:.5em 2em;
+    padding-top:1em;
+    display:none;
+}
+
+/* Facebox */
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(0,0,0,0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 10px;
+  background: #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:5px;
+  right:5px;
+  padding:2px;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}
+
+/* Lets div overlay underlying */
+.overlay {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9999;
+}

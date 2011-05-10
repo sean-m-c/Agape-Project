@@ -1,0 +1,200 @@
+div.form fieldset {
+    border: 1px solid #c8cbcc;
+    border-top: 2px solid #c8cbcc;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    font-family: Cambria, Georgia, serif;
+    font-size: 0.9375em;
+    background-color: rgb(245, 245, 245);
+    background-color: rgba(245, 245, 245, 0.5);
+    }
+
+div.form fieldset legend {
+    font-size: 1.25em;
+    padding: 0 .35em;
+    margin-left: -0.35em;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    }
+
+div.form .row {
+    margin: 10px 0;
+    clear:both;
+    }
+
+div.form label {
+    color:#232323;
+    margin-top:.3em;
+    display:inline;
+    float:none;
+    }
+
+div.form input[type="text"],
+div.form input[type="password"],
+div.form textarea,
+div.form select {
+    border:1px solid #c7cacb;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.25em;
+    background-color: #fff;
+    font-size: 16px;
+    color: #666;
+    display:block;
+    }
+
+
+div.form input[type="submit"],
+input[type="button"],
+.buttonLink {
+    text-decoration:none;
+    padding:0.5em 1em;
+    background-color:#5E98B5;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    color: #EDECE8;
+    font-size: 16px;
+    border: 1px solid #5E98B5;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin-right: 1em;
+    }
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+    display:inline !important;
+    }
+
+div.form input[type="checkbox"],
+div.form input[type="radio"] {
+    display:inline;
+    float:left;
+}
+
+
+div.form textarea {
+    font-size:1em;
+    font-family: inherit;
+    padding:5px;
+}
+
+div.form input:focus {
+    border:1px solid #dc8b17;
+}
+
+div.listRow {
+    position:relative;
+    left:-5px;
+    top:5px;
+}
+div.form div.row div.listRow > label {
+    float:none;
+}
+
+div.form .hint
+{
+    margin: 0;
+    padding: 0;
+    color:#666;
+    float:left;
+    margin:1em 0;
+    font-weight:bold;
+}
+
+
+div.form p.note {
+    display:inline;
+    font-style: italic;
+    margin: 0 0 1em 0;
+    font-size:.8em;
+    }
+
+div.form span.required {
+    color: red;
+    }
+
+div.form div.error label,
+div.form label.error,
+div.form span.error
+{
+    color: #C00;
+}
+
+div.form div.success label,
+div.form label.success,
+div.form span.success {
+    border-color: #488c07;
+    color: #488c07;
+}
+
+div.form div.error input,
+div.form div.error textarea,
+div.form div.error select,
+div.form input.error,
+div.form textarea.error,
+div.form select.error
+{
+    background: #FEE url('../images/inputBg.gif') 0 0 repeat-x;
+    border-color: #C00;
+}
+
+div.form div.success input,
+div.form div.success textarea,
+div.form div.success select,
+div.form input.success,
+div.form textarea.success,
+div.form select.success
+{
+    background: #E6EFC2 url('../images/inputBg.gif') 0 0 repeat-x;
+    border-color: #488c07;
+}
+
+div.form .errorSummary
+{
+    border: 2px solid #e4b8b8;
+    padding:10px 5px 10px 35px;
+    margin: 0 0 20px 0;
+    background: #FEE url('../images/i_notifications.png') 5px 5px no-repeat;
+}
+
+div.form .errorMessage
+{
+    color: red;
+    font-size: 0.9em;
+}
+
+div.form .errorSummary p
+{
+    margin: 0;
+    padding: 5px;
+}
+
+div.form .errorSummary ul
+{
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+div.wide.form label
+{
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    text-align: right;
+    width: 100px;
+}
+
+div.wide.form .row
+{
+    clear: left;
+}
+
+div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
+{
+    clear: left;
+    padding-left: 110px;
+}
+
+.hiddenChild {
+    display:none;
+}

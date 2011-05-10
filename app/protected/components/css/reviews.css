@@ -1,0 +1,40 @@
+.otherComments {
+    display:none;
+    width:480px;
+    float:left;
+    margin-left:20px;
+}
+div.bubble {
+    margin-bottom:2em;
+}
+div.bubble div.rounded {
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: #fff;
+    }
+    
+div.bubble div.rounded blockquote {
+    border: 0;
+}
+div.bubble div.rounded blockquote p {
+    margin: 10px 10px 10px 17px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    color: #333;
+}
+div.bubble cite.rounded {
+    position: relative;
+    margin: 0px;
+    padding-left: 15px;
+    padding-top: 12px;
+    top: 8px;
+    color:#F5F5F5;
+    background:transparent url(../../images/tip-rounded.gif) no-repeat 15px 0;
+    font-style: normal;
+    }
+    
+div.bubble cite.rounded strong {
+    color:#333;
+    }

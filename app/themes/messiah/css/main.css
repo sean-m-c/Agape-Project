@@ -1,0 +1,623 @@
+body {
+    background: #d9d8d4 url(../images/main_bg.jpg) no-repeat top center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #A36317;
+}
+
+a:hover {
+    color: #663D10; 
+}
+
+#header {
+    padding: 0;
+    margin:0;
+    height: 8.5em;
+}
+
+#header img {
+    display: none; 
+}
+
+#content {
+    padding: 1em 0;
+    position: relative;
+}
+
+#sidebar {
+    padding: 20px 20px 20px 0;
+}
+
+#footer {
+    padding: 10px 0 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+    border-top: 1px solid #999;
+    width: 960px;
+    float: left;
+}
+
+#header #name {
+    display: none;
+}
+
+
+
+
+/* MAIN NAVIGATION BAR */
+
+#mainmenu ul#nav {
+    margin:0 0 0.75em 0;
+    width: 100%;
+    font-family: Cambria, Georgia, serif;
+}
+
+#mainmenu ul#nav li {
+    margin:0 1.5em 0 0;
+}
+
+#mainmenu ul#nav li.last {
+    float: right;
+    margin: 0;
+}
+
+#mainmenu ul a {
+    color: #666;
+    font-size: 1.125em;
+    text-decoration: none;
+    padding: 0.25em 0;
+}
+
+#mainmenu ul li a:hover,
+#mainmenu ul#nav li.active a {
+    color: #232323;
+    text-decoration:none;
+    border-bottom: 2px solid #232323;
+    margin-bottom: -2px;
+}
+
+
+
+h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #232323;
+    margin: 0 0 1em 0;
+}
+
+
+
+div.flash {
+    padding:.8em 3.5em;
+    margin: 1em 0;
+    border: 2px solid #ddd;
+}
+div.flash a {
+    text-decoration:underline;
+}
+
+div.flash a.closeFlash {
+    cursor:pointer;
+    margin-left:2em;
+}
+
+div.flash-error {
+    background:#FBE3E4 url('../images/i_logout.png') .8em center no-repeat;
+    color:#8a1f11;
+    border-color:#FBC2C4;
+}
+
+div.flash-notice {
+    background:#FFF6BF url('../images/i_notifications.png') .8em center no-repeat;
+    color:#514721;
+    border-color:#FFD324;
+}
+
+div.flash-success {
+    background:#E6EFC2 url('../images/i_checkmark.png') .8em center no-repeat;
+    color:#264409;
+    border-color:#C6D880;
+}
+
+div.flash-error a {
+    color:#8a1f11;
+}
+
+div.flash-notice a {
+    color:#514721;
+}
+
+div.flash-success a {
+    color:#264409;
+}
+
+div.form .rememberMe label {
+    display: inline;
+}
+
+div.view {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f2f2f2;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+
+
+div.breadcrumbs {
+    font-size: .8em;
+}
+
+div.breadcrumbs a,
+div.breadcrumbs span {
+    font-weight: bold;
+}
+
+
+
+div.search-form {
+    padding: 10px;
+    margin: 10px 0;
+    background: #eee;
+}
+
+
+
+
+.portlet-decoration
+{
+    padding: 3px 8px;
+    background: #B7D6E7;
+    border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color: #298dcd;
+}
+
+.portlet-content
+{
+    font-size:0.9em;
+    margin: 0 0 15px 0;
+    padding: 5px 8px;
+    background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+.portlet-content li
+{
+    padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.operations li
+{
+    padding-bottom: 2px;
+}
+
+.operations li a
+{
+    font: bold 12px Arial;
+    color: #0066A4;
+    display: block;
+    padding: 2px 0 2px 8px;
+    line-height: 15px;
+    text-decoration: none;
+}
+
+.operations li a:visited
+{
+    color: #0066A4;
+}
+
+.operations li a:hover
+{
+    background: #80CFFF;
+}
+
+
+
+
+
+#taskPanel .i_notifications {
+    padding: 0 0 0.5em 0;
+    color: #A36317;
+    width: 600px;
+    border-bottom: 1px solid #A36317;
+}
+
+
+.icon_pad {
+    padding: 0 0 3px 25px;
+    border: 0;
+}
+
+.noBGPad {
+    background-position:0 0;
+}
+
+/* Custom - move this somewhere else */
+.cssGridButton {
+    background: #FF8638 url(../images/alert-overlay.png) repeat-x;
+    color: #fff;
+    display: inline-block;
+    text-align:center;
+    padding:1px 10px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+    /* For IE */
+    * background-color:#e7731d;
+    * top:10px;
+}
+.cssGridButton:hover {
+    background-color: #fe6d03;
+}
+.cssGridButton:active { top: 1px; }
+.cssGridButton:focus {
+    outline:2px solid rgba(0,100,200,0.5);
+    -moz-outline-radius:3px;
+}
+
+/* Dressed up buttons */
+.diffbutton, .diffbutton:visited {
+    background: #F99C21;
+    color: #fff;
+    text-align:center;
+    font-size: 25px;
+    padding: 18px 26px;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.diffbutton:hover {
+    background-color: #A36317;
+}
+.diffbutton:active { top: 1px; }
+.diffbutton:focus {
+    outline:2px solid rgba(0,100,200,0.5);
+    -moz-outline-radius:3px;
+}
+.diffbutton.small {
+    float:right;
+    width:140px;
+    height:15px;
+    font-size:15px;
+    line-height:15px;
+    font-weight:bold;
+    margin:0;
+    padding:10px 5px;
+    color:#fff;
+}
+
+/* PRoject */
+#ajaxPanel {
+    width:100%;
+    margin-left:105%;
+}
+
+#project-form {
+    overflow:hidden;
+}
+
+.loading {
+
+    margin:0 auto;
+    background-image: url('../images/ajax-loader.gif');
+    background-position:  center center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index:1010;
+    width:100%;
+    height:100px;
+}
+
+
+
+
+/* For AJAX loader box, to remove the 'X' in top right corner */
+.ajax-loader .ui-dialog-titlebar-close, .ajax-loader .ui-dialog-titlebar, .ajax-loader .ui-widget-header {
+    display: none;
+}
+
+.ui-dialog.ajax-loader .ui-widget-content {
+    padding:30px 20px;
+    overflow:visible;
+    position:relative;
+    top:-17px;
+    left:-7px;
+}
+
+
+
+/* For link to open review dialog box */
+.reviewButtons {
+    display:block;
+    margin-bottom: 1.5em;
+}
+
+.reviewButtons .decision {
+    background-color: #9E1B1B;
+    border: 1px solid #9E1B1B;
+}
+
+
+#reviewDecision {
+    background:#fff;
+    display:none;
+    position:absolute;
+    z-index:1010;
+    padding:20px;
+    width:255px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+#reviewDecision p {
+    font-family: Cambria, Georgia, serif;
+    font-size: 13px;
+}
+
+#reviewDecision #decisionLabel {
+    width:200px;
+    text-align: center;
+}
+
+#reviewDecision .row {
+    margin: 4px 9px;    
+}
+
+#reviewDecision #decisionSlider {
+    background: #B9D69A;
+    margin: 0 0 25px 62px;
+}
+
+#reviewDecision #decisionSlider a.ui-slider-handle {
+    background-color: #5C6B49;
+    border: none;
+    width: 23px;
+    height: 23px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#reviewDecision #decisionSlider a.ui-slider-handle:hover {
+    background-color: #232323;
+    cursor: pointer;
+}
+
+#reviewDecision .buttonLink {
+    clear: both;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+
+/* background images for tabs */
+
+.ui-widget-header {
+    background: #5C6B49 url(../images/tabheader_bg.gif) repeat-x top left; 
+}
+
+ul.ui-tabs-nav li.ui-state-default,
+ul.ui-tabs-nav li.ui-state-hover,
+ul.ui-tabs-nav li.ui-state-hover a:hover {
+    background: #B9D69A url(../images/tab_bg.gif) repeat-x top left; 
+}
+
+ul.ui-tabs-nav li.ui-state-active,
+ul.ui-tabs-nav li.ui-state-active a:hover {
+    background: #f5f5f5;
+    background-image: none;
+}   
+
+
+
+.hide {
+    display:none;
+}
+a {
+    outline:none;
+}
+.tooltip {
+    display:none;
+    border:3px solid #000;
+    padding:10px;
+    min-width:150px;
+    max-width:300px;
+    color:#fff;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background: #333;
+    -moz-box-shadow: 1px 1px 10px #333;
+    -webkit-box-shadow: 1px 1px 10px #333;
+}
+
+/* JTools tabs */
+/* root element for accordion. decorated with rounded borders and gradient background image */
+.accordion {
+    background:#fff url(/img/global/gradient/h300.png) 0 0;
+    border:1px solid #ccc;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
+
+/* accordion header */
+.accordion h2 {
+    background:#fff url(/img/global/gradient/h30.png);
+    margin:0;
+    padding:5px 15px;
+    border-bottom:1px solid #999;
+    cursor:pointer;
+}
+
+/* currently active header */
+.accordion h2.current {
+    cursor:default;
+}
+
+/* accordion pane */
+.accordion .pane {
+    border-width:0 2px;
+    display:none;
+    height:180px;
+    padding:15px;
+}
+
+/* a title inside pane */
+.accordion .pane h3 {
+    font-weight:normal;
+    margin:0 0 -5px 0;
+    font-size:16px;
+}
+.ajaxLoaderSmall {
+    background:url('../images/ajax-loader-small.gif') 0 0 no-repeat;
+    padding-left:30px;
+}
+#ajaxResponse {
+    border-top:2px solid #f2f2f2;
+    margin:.5em 2em;
+    padding-top:1em;
+    display:none;
+}
+
+div#login fieldset {
+    background: #FFF;
+    border: 1px solid #CCC;
+}
+
+
+/* Home page "3 steps" */   
+
+#content ol.boxes {
+
+}
+
+#content ol.boxes li {
+    font-family: Cambria, Georgia, serif;
+    text-align: left;
+    font-size: 18px;
+}
+
+#content ol.boxes li#step1,
+#content ol.boxes li#step2 {
+    border-right: 1px dashed #A36317;
+}
+
+#content ol.boxes li#step1,
+#content ol.boxes li#step2,
+#content ol.boxes li#step3 {
+    background: none; 
+}
+
+#content ol.boxes li span.emph {
+    font-family: Cambria, Georgia, serif;
+    color: #A36317;
+    float: left;
+    font-size: 32px;
+    height: 60px;
+    margin: -4px 5px 0 0;
+}
+#login {
+    display:none;
+    position:absolute;
+    left:325px;
+    top:70px;
+    max-width:220px;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+}
+#login fieldset {
+    border:1px solid #bbb;
+    background-color:#fff;
+    -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.3);
+}
+#login label {
+    text-align:left;
+}
+.register {
+    margin-left:400px;
+}
+ol.boxes {
+    margin:0 auto;
+    height:75px;
+    padding:0;
+    list-style-type:none;
+    margin-bottom:80px;
+    -moz-border-radius:20px;
+}
+ol.boxes li {
+    text-shadow: 0 -1px 1px #fff;
+    text-align:center;
+    font:19px/25px Verdana, Helvetica, Geneva;
+    color:#333;
+    float:left;
+    display:inline;
+    width:250px;
+    height:75px;
+    padding:20px;
+}
+ol.boxes li span.emph {
+    text-align:left;
+    font:27px/25px Verdana, Helvetic, Geneva;
+    padding-right:5px;
+
+}
+ol.boxes li#step1 {
+    background:#e1e1e1 url(images/homelist-overlay.png) 0 0 repeat-x;
+}
+.gridRow ol.boxes li#step2 {
+    background:#ccc url(images/alert-overlay.png) 0 0 repeat-x;
+}
+.gridRow ol.boxes li#step3 {
+    background:#999 url(images/alert-overlay.png) 0 0 repeat-x;
+}
+
+span#register {
+    position:relative;
+    left:600px;
+}
+.buttonContainer {
+    float:left;
+    width:100%;
+    margin-bottom:1em;
+}
